@@ -1,0 +1,18 @@
+<div class="container">
+    <h1 class="text-center mt-5 mb-5">J.K Rowling</h1>
+    <p class="text-center mt-2 mb-5 font-italic font-weight-light">“It is our choices, Harry, that show what we truly are, far more than our abilities.”</p>
+</div>
+<div class="container">
+    <div class="d-flex justify-content-around">
+        {{#each books}}
+            <div class="card" style="width: 18rem;">
+                <img src={{this.image}} class="card-img-top img" alt={{this.title}}>
+                <div class="card-body">
+                    <h5 class="card-title">{{this.title}}</h5>
+                    <p class="card-text">Published in {{this.publichedDate}}</p>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+ </div>
+ <div class="container"></div>

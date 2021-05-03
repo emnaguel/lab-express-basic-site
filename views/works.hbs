@@ -1,0 +1,15 @@
+
+<div class="container mt-5">
+    <div class="d-flex justify-content-around">
+        {{#each books}}
+            <div class="card" style="width: 18rem;">
+                <img src={{this.image}} class="card-img-top img" alt={{this.title}}>
+                <div class="card-body">
+                    <h5 class="card-title">{{this.title}}</h5>
+                    <p class="card-text">Published in {{this.publichedDate}}</p>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+ </div>
+ <div class="container"></div>
